@@ -115,6 +115,10 @@ main
 
 .nav-content li {
 	list-style: none;
+	font-size: 0.8em;
+	font-style: normal;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
 }
 
 .panel {
@@ -141,18 +145,9 @@ main
 }
 */
 
-.panel-item a {
-
-}
-
-.panel-item div {
+.panel-item {
 	position: relative;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
 	z-index: 1;
-	margin: 12px;
 	width: 300px;
 	height: 300px;
 	text-shadow: 0 0 3px rgba(0,0,0,0.9);
@@ -162,6 +157,8 @@ main
 .bg {
 	position: absolute;
 	z-index: -1;
+	width: inherit;
+	height: inherit;
 	background-size: cover;
 	background-position: center;
 	opacity: 0.4;
@@ -180,7 +177,7 @@ main
 	display: block;
 	z-index: 2;
 	margin: inherit;
-	padding: 12px 0 0 24px;
+	padding: 12px 24px;
 	opacity: 1;
 }
 
