@@ -168,8 +168,8 @@ main
 
 .bg:hover {
 	opacity: 0.8;
-    -webkit-transition: opacity 0.3s; /* Safari */
-    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.1s; /* Safari */
+    transition: opacity 0.1s;
 }
 
 .panel-text {
@@ -236,6 +236,22 @@ images
 
 #img-tdc-catalog {
 	background-image: url('../img/tdc-catalog.png');
+}
+
+#img-photography {
+	background-image: url('../img/photography.png');
+}
+
+#img-storage {
+	background-image: url('../img/storage.png');
+}
+
+#img-bmw-art-car {
+	background-image: url('../img/bmw-art-car.png');
+}
+
+#img-gtown-day {
+	background-image: url('../img/gtown-day.jpg');
 }
 
 
