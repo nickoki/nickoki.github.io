@@ -9,9 +9,14 @@ body {
 	margin: 0;
 	min-height: 100vh;
 	background-color: #edefed;
-	font-family: "Arial Neue", "Helvetica", sans-serif;
-	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 	color: #484848;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
 }
 
 .container {
@@ -83,11 +88,26 @@ main
 	/* 12em is the width of the columns */
 	flex: 0 0 12em;
 	background-color: #656d78;
+	color: #fff;
 }
 
 .nav-content {
 	/* put the nav on the left */
 	order: -1;
+	padding: 24px;
+}
+
+.nav-content h3 {
+	font-size: 2em;
+}
+
+.nav-content ul {
+	border-top: 1px solid #aaa;
+	padding: 24px 0 12px 0;
+}
+
+.nav-content li {
+	list-style: none;
 }
 
 .panel {
@@ -95,6 +115,7 @@ main
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	margin-bottom: 100px;
+	padding: 12px;
 	width: inherit;
 	max-width: 100%;
 }
@@ -119,6 +140,8 @@ main
 
 .panel-item div:hover {
 	opacity: 1;
+    -webkit-transition: opacity 0.3s; /* Safari */
+    transition: opacity 0.3s;
 }
 
 .panel-item div {
@@ -131,6 +154,8 @@ main
 	background-size: cover;
 	background-position: center;
 	opacity: 0.6;
+	-webkit-transition: opacity 1.2s; /* Safari */
+	transition: opacity 1.2s;
 }
 /*
 .img-container span {
@@ -171,10 +196,108 @@ images
 footer
 ====== */
 footer {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
 	height: 300px;
 	box-shadow: 0 0 8px rgba(0,0,0,0.3);
 	background-color: #434a54;
 }
+
+.footer-left {
+	display: inline-block;
+	padding: 24px;
+	width: 12em;
+}
+
+footer img {
+	width: 12em;
+	height: 12em;
+}
+
+.footer-info {
+	padding: 24px;
+}
+
+.buttons {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0;
+}
+
+.buttons .button {
+	margin-bottom: 1em;
+}
+
+.buttons .button:last-child {
+	  margin-bottom: 0;
+}
+
+.footer-info a.button {
+ 	border: 1px solid #d8dee9;
+ 	/*border-radius: 290486px;*/
+	padding: 1em 1.5em;
+	width: 12em;
+	text-align: center;
+	text-decoration: none;
+	color: #b0bfc7;
+	transition: none 0.3s ease-out;
+	transition-property: color, background;
+}
+
+a strong {
+	color: inherit;
+}
+
+.button:hover {
+	background: #e81c4f;
+	border-color: transparent;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.button em {
+  display: block;
+  font-size: 0.6em;
+  font-style: normal;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.button strong {
+  color: #e81c4f;
+  transition: color 200ms ease-out;
+}
+
+.button:hover strong {
+  color: white !important;
+}
+
+.button.github strong {
+  color: #333;
+}
+
+.button.github:hover {
+  background: #333;
+}
+
+.button.linkedin strong {
+  color: #0077b5;
+}
+
+.button.linkedin:hover {
+  background: #0077b5;
+}
+
+.button.twitter strong {
+  color: #55acee;
+}
+
+.button.twitter:hover {
+  background: #55acee;
+}
+
+
 
 /* TODO responsive */
 @media (min-width: 768px) {
@@ -190,7 +313,7 @@ footer {
 
 	.nav-content, .aside-content {
 		/* 12em is the width of the columns */
-		flex: 0 0 18em;
+		flex: 0 0 12em;
 	}
 
 }
